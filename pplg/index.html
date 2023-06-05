@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- My ccs -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mbul</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#2">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#3">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-center">
+        <h1 class="text-white">Travelling</h1>
+      </div>
+    </div>
+    >
+    <!-- home -->
+    <div class="container my-5 d-grid gap-5">
+      <div class="p-5 border" >
+        <p>
+          Selamat datang di website penjualan foto kami! Temukan berbagai macam koleksi foto berkualitas tinggi yang siap untuk memperindah proyek Anda. Dari pemandangan alam yang menakjubkan hingga gambar-gambar kreatif yang memukau, kami menyediakan beragam pilihan foto yang dapat dipilih sesuai kebutuhan Anda. Mulai jelajahi koleksi kami sekarang dan dapatkan gambar yang sempurna untuk memenuhi kebutuhan visual Anda!
+        </p>
+      </div> 
+<!-- Gallery -->
+    <div id="2" class="card-group">
+      <div class="row">
+        <div class="card " style="width: 23rem;">
+          <img src="img/p.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card with stretched link</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 23rem;">
+          <img src="img/b.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card with stretched link</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 23rem;">
+          <img src="img/c.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card with stretched link</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+    <div class="container col-xxl-8 px-4 py-5">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">© 15.mei.2023</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul id="1" class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <hr>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 15.mei.2023 , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </div>
+  </body>
+</html>
